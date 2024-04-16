@@ -1,0 +1,197 @@
+body{
+    color: white;
+}
+section{
+    width: 100%;
+    overflow-x: hidden;
+  }
+#homesection{
+    background-image: url('./images/bg1.jpeg');
+    height: 100vh;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    position: relative;
+} 
+ #homesection::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+} 
+#homesection1{
+    height: 100vh;
+    position: absolute;
+    color: white;
+    margin-top: 250px;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: grey;
+}
+.nav-item a:is(:link,:active,:visited).active{
+    color: red;
+}
+.navbar-color{
+    background-color: black;
+}
+.navbar-brand img {
+    max-height: 70px; /* Set max height for the logo */
+    transition: max-height 0.3s ease; /* Add transition for smooth effect */
+  }
+.navbar-scrolled .navbar-brand img {
+    max-height: 0; /* Hide the logo when navbar is scrolled */
+  }
+.navbar-scrolled .navbar-brand {
+    margin: 0 auto; /* Center the navbar brand */
+  }
+#foodhut{
+    color: red;
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+body{
+    background-color: #212529;
+}
+#menu{
+    padding: 0;
+    margin-left: 0;
+}
+#menu img{
+    height: 100%;
+    width: 100%;
+}
+.gallery{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .overlay i {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin-top: 42%;
+  }
+#booktable{
+    background-image: url('https://images.pexels.com/photos/903376/pexels-photo-903376.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Set height to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#resultContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 300px;
+    background-color:white;
+    border-radius: 2px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+  .tick-symbol {
+    font-size: 50px;
+    color: green;
+  }
+.input-group {
+    margin: 0 10px; /* Adjust the spacing between inputs */
+}
+#blog .btn{
+    background-color: black;
+    padding: 0px 50px;
+    font-size: 18px;
+    color: red;
+}
+#blog .btn:hover {
+    background-color: red; 
+    border: 1px solid red;
+    color: white;/* Change to the desired color */
+}
+#blog .btn.active {
+    background-color: red; 
+    border: 1px solid red;
+    color: white;/* Change to the desired color */
+}
+.card:hover{
+    box-shadow: 0 4px 4px 0 rgba(247, 245, 245, 0.5);
+}
+.testmonial-subtitle {
+    position: relative;
+  }
+.testmonial-subtitle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 430px; /* Adjust the width of the line */
+    height: 1px; /* Adjust the height of the line */
+    background-color: red; /* Adjust the color of the line */
+    transform: translateX(-50%);
+}
+.testmonial-subtitle::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust the distance of the arrow from the line */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Adjust the size and color of the arrow */
+    border-right: 10px solid transparent; /* Adjust the size and color of the arrow */
+    border-top: 5px solid red; /* Adjust the size and color of the arrow */
+    transform: translateX(-50%);
+}
+.testmonial-body{
+    border: 0.2px solid grey;
+}
+.testmonial-body:hover{
+    box-shadow: 0 4px 4px 0 rgba(247, 245, 245, 0.5);
+    
+}
+footer a{
+    text-decoration: none;
+}
+@media screen and (max-width:992px){
+    .nav-link{
+        color:white;
+        background-color: black;
+    }
+    #foodhut{
+        display: none;
+    }
+    iframe{
+        width:400px;
+    }
+}
